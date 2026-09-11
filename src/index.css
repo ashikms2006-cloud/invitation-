@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold-primary: #b8860b;
+    --gold-metallic: #d4af37;
+    --gold-light: #f5d77f;
+    --gold-dark: #8a6405;
+    --bg-ivory: #fdfbf7;
+    --bg-card: #ffffff;
+    --bg-champagne: #f7f2e7;
+    --text-charcoal: #1f1a14;
+    --text-muted: #5e5343;
+  }
+
+  body {
+    background-color: var(--bg-ivory);
+    color: var(--text-charcoal);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Typography styles */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-garamond {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Great Vibes', cursive;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Metallic Gold Typography on White & Ivory */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #8a6405 0%, #b8860b 25%, #d4af37 50%, #8a6405 75%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: goldShine 6s linear infinite;
+}
+
+.text-gold-bright {
+  background: linear-gradient(135deg, #b8860b 0%, #d4af37 50%, #e6ca65 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Shadow and borders matching posters */
+.gold-card-shadow {
+  box-shadow: 0 10px 35px -5px rgba(184, 134, 11, 0.15), 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.gold-card-shadow-lg {
+  box-shadow: 0 20px 50px -10px rgba(184, 134, 11, 0.25), 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.gold-border {
+  border: 1px solid rgba(184, 134, 11, 0.35);
+}
+
+.gold-border-thick {
+  border: 2px solid rgba(184, 134, 11, 0.5);
+}
+
+@keyframes goldShine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes scanLaser {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 96%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.animate-laser {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #b8860b, #fae084, #b8860b, transparent);
+  box-shadow: 0 0 12px #d4af37, 0 0 25px #fae084;
+  animation: scanLaser 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes buttonShimmer {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+.animate-btn-shimmer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  animation: buttonShimmer 3s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulseBorderGlow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.4), 0 0 30px rgba(225, 48, 108, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.7), 0 0 45px rgba(225, 48, 108, 0.4);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseBorderGlow 2.4s infinite ease-in-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f2e7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b8860b;
+}
+
