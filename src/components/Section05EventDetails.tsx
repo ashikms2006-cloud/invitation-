@@ -76,55 +76,40 @@ export const Section05EventDetails: React.FC = () => {
             </span>
           </motion.div>
 
-          {/* Card 2: TIME */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col items-center p-8 rounded-2xl bg-gradient-to-b from-[#18140e] to-[#100d09] border border-[#d4af37]/40 shadow-xl group hover:border-[#fae084] transition-all"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-[#261f14] border border-[#d4af37] flex items-center justify-center text-[#fae084] mb-5 shadow-lg group-hover:scale-110 group-hover:-rotate-6 transition-transform">
-              <Clock size={32} />
+          {/* Time Card */}
+          <div className="p-6 rounded-2xl bg-white border border-[#d4af37]/30 shadow-sm text-center">
+            <div className="w-12 h-12 mx-auto rounded-full bg-[#f7f2e7] border border-[#d4af37] flex items-center justify-center text-[#8a6405] mb-4">
+              <Clock size={24} />
             </div>
-            <span className="font-montserrat text-xs tracking-widest uppercase font-bold text-[#d4af37] mb-2">
-              EVENT TIME
+            <span className="font-montserrat text-xs uppercase tracking-wider text-[#8a6405] font-bold block mb-1">
+              Time
             </span>
-            <h3 className="font-cinzel text-2xl font-bold text-[#ffffff] mb-1">
-              10:30 AM
+            <h3 className="font-cinzel text-xl font-bold text-[#1f1a14]">
+              11:00 AM Holy Mass
             </h3>
-            <p className="font-garamond text-lg text-[#fae084] font-semibold">
-              Solemn Holy Mass
+            <p className="font-garamond italic text-[#8a6405] text-sm mt-1">
+              & Thanksgiving
             </p>
-            <span className="font-montserrat text-xs text-[#a89c89] mt-3">
-              Followed by Grand Family Feast & Reception
-            </span>
-          </motion.div>
+          </div>
 
-          {/* Card 3: VENUE */}
-          <motion.div
-            initial={{ opacity: 0, y: 25 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="flex flex-col items-center p-8 rounded-2xl bg-gradient-to-b from-[#18140e] to-[#100d09] border border-[#d4af37]/40 shadow-xl group hover:border-[#fae084] transition-all"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-[#261f14] border border-[#d4af37] flex items-center justify-center text-[#fae084] mb-5 shadow-lg group-hover:scale-110 group-hover:rotate-6 transition-transform">
-              <MapPin size={32} />
+          {/* Venue Card */}
+          <div className="p-6 rounded-2xl bg-white border border-[#d4af37]/30 shadow-sm text-center">
+            <div className="w-12 h-12 mx-auto rounded-full bg-[#f7f2e7] border border-[#d4af37] flex items-center justify-center text-[#8a6405] mb-4">
+              <MapPin size={24} />
             </div>
-            <span className="font-montserrat text-xs tracking-widest uppercase font-bold text-[#d4af37] mb-2">
-              EVENT VENUE
+            <span className="font-montserrat text-xs uppercase tracking-wider text-[#8a6405] font-bold block mb-1">
+              Venue
             </span>
-            <h3 className="font-cinzel text-xl sm:text-2xl font-bold text-[#ffffff] mb-1">
+            <h3 className="font-cinzel text-xl font-bold text-[#1f1a14]">
               St. Thomas Church
             </h3>
-            <p className="font-garamond text-lg text-[#fae084] font-semibold">
-              Thuruthur, Kerala
+            <p className="font-garamond italic text-[#8a6405] text-sm mt-1">
+              Thuruthoor, Puthenvelikara
             </p>
-            <span className="font-montserrat text-xs text-[#a89c89] mt-3">
-              Parish Hall & Auditorium
+            <span className="font-montserrat text-xs text-[#5e5343] mt-2 block">
+              56XP+PWH • Kerala 683594
             </span>
-          </motion.div>
+          </div>
         </div>
 
         {/* Action Buttons: View Location & Add to Calendar */}

@@ -42,7 +42,7 @@ export const EventAndCountdownSection: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const googleMapUrl = "https://maps.google.com/?q=St.+Thomas+Church+Thuruthur";
+  const googleMapUrl = "https://maps.google.com/?q=St.+Thomas+Church,+56XP%2BPWH,+Thuruthoor,+Puthenvelikara,+Kerala+683594";
 
   return (
     <section id="event-hub" className="relative py-20 px-4 sm:px-6 bg-[#fdfbf7] overflow-hidden border-t border-[#d4af37]/20">
@@ -113,10 +113,10 @@ export const EventAndCountdownSection: React.FC = () => {
               St. Thomas Church
             </h3>
             <span className="text-xs font-garamond italic text-[#8a6405] font-bold block mt-0.5">
-              Thuruthur
+              Thuruthoor, Puthenvelikara
             </span>
-            <span className="text-[11px] font-garamond italic text-[#5e5343] block mt-0.5">
-              Kerala
+            <span className="text-[11px] font-montserrat font-medium text-[#5e5343] block mt-0.5">
+              56XP+PWH • Kerala 683594
             </span>
           </div>
         </div>

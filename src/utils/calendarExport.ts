@@ -11,7 +11,7 @@ export interface EventInfo {
 export const EVENT_DETAILS: EventInfo = {
   title: "Francis & Rosily 50th Anniversary + Andrina & Dhaniel 1st Holy Communion",
   description: "One Big Family Celebration! Holy Mass & Thanksgiving celebrating Francis & Rosily's 50th Golden Jubilee and First Holy Communion of Andrina Denny & Dhaniel Daison with the @familycousinzz vibe!",
-  location: "St. Thomas Church, Thuruthur, Kerala",
+  location: "St. Thomas Church, 56XP+PWH, Thuruthoor, Puthenvelikara, Kerala 683594",
   startDate: new Date("2026-09-12T11:00:00+05:30"),
   endDate: new Date("2026-09-12T15:30:00+05:30"),
 };

@@ -199,7 +199,7 @@ export const Section15GrandFinale: React.FC<Section15GrandFinaleProps> = ({ onOp
           Francis & Rosily • Andrina Denny • Dhaniel Daison • FAMILYCOUSINZZZ
         </p>
         <p className="text-[11px] text-[#5e5548]">
-          Saturday, 12th September 2026 • 11:00 AM • St. Thomas Church, Thuruthur, Kerala
+          Saturday, 12th September 2026 • 11:00 AM • St. Thomas Church, 56XP+PWH, Thuruthoor, Puthenvelikara, Kerala 683594
         </p>
       </footer>
     </section>

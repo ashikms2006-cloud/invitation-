@@ -90,7 +90,7 @@ export const FinalRSVPSection: React.FC<FinalProps> = ({ onOpenRSVP, onOpenFamil
             Francis & Rosily • Andrina Denny • Dhaniel Daison • @familycousinzz
           </p>
           <p className="text-[11px] text-[#7d705c]">
-            Saturday, 12th September 2026 • 11:00 AM • St. Thomas Church, Thuruthur, Kerala
+            Saturday, 12th September 2026 • 11:00 AM • St. Thomas Church, 56XP+PWH, Thuruthoor, Puthenvelikara, Kerala 683594
           </p>
         </footer>
       </div>
